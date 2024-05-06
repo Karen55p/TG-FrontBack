@@ -1,0 +1,50 @@
+.del{
+    width: 800px;
+    height: 400px;
+    background-color: #282c34;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 30px 40px;
+}
+
+p{
+    vertical-align: top;
+    font-size: 40px;
+    text-align: center;
+}
+
+.btdel{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 125px;
+}
+
+.b1, .b2{
+    padding: 50px 70px ;
+    border-radius: 40px;
+    text-align: center;
+    align-self: center;
+    margin-left: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    border: 5px solid #2f8c43;
+    text-decoration: none;
+}
+
+.b1:hover{
+    background-color: #2f8c43;
+}
+
+.b2:hover{
+    background-color: #2f8c43;
+}
