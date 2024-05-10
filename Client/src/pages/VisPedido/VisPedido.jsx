@@ -1,6 +1,5 @@
 import React from "react";
 import './VisPedidoStyle.css'
-import { Link } from "react-router-dom";
 
 const Vispd = () => {
     return (
@@ -8,14 +7,18 @@ const Vispd = () => {
             <div className="titulo"><h1>Visualizar Pedidos</h1></div>
                 <div className="vispd">
                     <div className="boxvispd">
-                        <input type="text" placeholder="Cliente" required maxLength={40}/>
-                        <input type="text" placeholder="Tipo de produto" required maxLength={40} /><br/>
-                        <input type="text" placeholder="Dimensões" required maxLength={40} /><br/>
-                        <input type="text" placeholder="Tipo de Material" required maxLength={40} /><br/>
-                        <input type="date" placeholder="Prazo" required maxLength={40} /><br/>
-                        <input type="text" placeholder="Observações" required maxLength={40}/>
+                        <input type="text" placeholder="Cliente"/><br/>
+                        <input type="text" placeholder="Mobilia"/><br/>
+                        <div className="dimensoes">
+                            <input type="number" placeholder="A"></input>
+                            <input type="number" placeholder="L"></input>
+                            <input type="number" placeholder="C"></input>
+                        </div><br/>
+                        <input type="text" placeholder="Material"/><br/>
+                        <input type="date" placeholder="Prazo"/><br/>
+                        <input type="text" placeholder="Observações"/>
                     </div>
-                    <Link className="botaovidpd" to='/menu'>Gravar</Link>
+                    <button className="botaovispd">Gravar</button>
                 </div>
         </div>
     )

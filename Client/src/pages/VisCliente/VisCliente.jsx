@@ -1,6 +1,5 @@
 import React from "react";
 import './VisClienteStyle.css'
-import { Link } from "react-router-dom";
 
 const Viscl = () => {
     return (
@@ -8,14 +7,13 @@ const Viscl = () => {
             <div className="titulo"><h1>Visualizar Clientes</h1></div>
                 <div className="viscl">
                     <div className="boxviscl">
-                        <input type="text" placeholder="Cliente" required maxLength={40}/>
-                        <input type="text" placeholder="Tipo de produto" required maxLength={40} /><br/>
-                        <input type="text" placeholder="Dimensões" required maxLength={40} /><br/>
-                        <input type="text" placeholder="Tipo de Material" required maxLength={40} /><br/>
-                        <input type="date" placeholder="Prazo" required maxLength={40} /><br/>
-                        <input type="text" placeholder="Observações" required maxLength={40}/>
+                        <input type="text" placeholder="Nome"/>
+                        <input type="text" placeholder="Telefone"/><br/>
+                        <input type="number" placeholder="CPF"/><br/>
+                        <input type="text" placeholder="Endereço"/><br/>
+                        <input type="text" placeholder="Observações"/>
                     </div>
-                    <Link className="botaoviscl" to='/menu'>Gravar</Link>
+                    <button className="botaoviscl">Gravar</button>
                 </div>
         </div>
     )
