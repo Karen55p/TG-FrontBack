@@ -1,4 +1,4 @@
-import { openDb } from "./index";
+ import { openDb } from "./index";
 import { error } from 'console';
 
 export const getPedidos = async () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import './CadClienteStyle.css'
-//import { response } from "express";
+//b import { response } from "express";
 import { useNavigate } from "react-router-dom";
 
 const Cadcl = () => {
@@ -34,7 +34,7 @@ const Cadcl = () => {
                 navigate('/menu');
             })
             .catch(error => {
-                console.error('Erro ao Fazer login:', error);
+                console.error('Erro ao cadastrar cliente:', error);
             });
     };
 
