@@ -14,8 +14,10 @@ import Delpd from "./pages/DelPedido/DelPedido";
 import Delcl from "./pages/DelCliente/DelCliente";
 import Modpd from "./pages/ModPedido/ModPedido";
 import Modus from "./pages/ModUsuario/ModUsuario";
+import Modcl from "./pages/ModCliente/ModCliente";
 import Viscl from "./pages/VisCliente/VisCliente";
 import Vispd from "./pages/VisPedido/VisPedido";
+import Visus from "./pages/VisUsuario/VisUsuario";
 import Filpd from "./pages/FilPedido/FilPedido";
 
 const App = () => {
@@ -36,8 +38,10 @@ const App = () => {
               <Route path="/delpd" element={<Delpd/>}/>
               <Route path="/modpd" element={<Modpd/>}/>
               <Route path="/modus" element={<Modus/>}/>
+              <Route path="/modcl" element={<Modcl/>} /* adicionei essa rota que tava faltando *//>
               <Route path="/viscl" element={<Viscl/>}/>
               <Route path="/vispd" element={<Vispd/>}/>
+              <Route path="/visus" element={<Visus/>} /* essa tmb pq criei o arquivo */ />
               <Route path="/filpd" element={<Filpd/>}/>
             </Routes>
           </BrowserRouter>
