@@ -56,15 +56,15 @@ const Modus = () => {
                         <FaUserCircle className="iconm" />
                         <input type="text" placeholder="User" required maxLength={20} value={username} onChange={e => setUsername(e.target.value)}/>
                     </div>
+                    <div className="boxc" /* acrescenta dps, n tem o falock*/>
+                        <input type="text" placeholder="E-mail" required maxLength={30}value={email} onChange={e => setEmail(e.target.value)} />
+                    </div>
                     <div className="boxc">
                         <input type="text" placeholder="Nível" required maxLength={20} value={nivel} onChange={e => setNivel(e.target.value)} /* Esse nível precisa ser um select com 2 opções: Administrador e usuário comum *//>
                     </div>
                     <div className="boxm">
                         <FaLock className="iconm" />
                         <input type="password" placeholder="Senha" required maxLength={30} value={senha} onChange={e => setSenha(e.target.value)}/>
-                    </div>
-                    <div className="boxc" /* acrescenta dps, n tem o falock*/>
-                        <input type="text" placeholder="E-mail" required maxLength={30}value={email} onChange={e => setEmail(e.target.value)} />
                     </div>
                     <button className="botaoc" onClick={handleModUsuario}>Gravar</button>
                 </div>

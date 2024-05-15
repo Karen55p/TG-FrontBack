@@ -44,7 +44,7 @@ export const updateUsers = async (id: string, userName: string, email: string, n
     try {
         await db.run(
             'UPDATE user SET userName = ?, email = ?, nivel = ?, senha = ? WHERE id = ?',
-            [userName, email, senha, nivel, id]
+            [userName, email, nivel, senha, id]
         );
         console.log(`Usuário com ID ${id} atualizado com sucesso!`);
     } catch (err: any) {
