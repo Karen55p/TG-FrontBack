@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const Delcl = () => {
     
-    const id = 5 //coloquei só pra testar e tá funcionando legal, mas n pode deixar assim
+    const id = 6 //coloquei só pra testar e tá funcionando legal, mas n pode deixar assim
 
     const deleteCliente = async () => {
         try {

@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const Delus = () => {
 
-    const id = 3 //coloquei só pra testar e tá funcionando legal, mas n pode deixar assim
+    const id = 2 //coloquei só pra testar e tá funcionando legal, mas n pode deixar assim
     
     const deleteUser = async () => {
         try {
